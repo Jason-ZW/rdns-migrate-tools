@@ -1,0 +1,20 @@
+package: github.com/Jason-ZW/rdns-migrate-tools
+import:
+- package: github.com/coreos/etcd
+  version: v3.2.9
+- package: github.com/coreos/go-semver
+  version: v0.2.0
+- package: github.com/pkg/errors
+  version: v0.8.0-1-g839d9e9
+- package: github.com/sirupsen/logrus
+  version: v1.0.5
+- package: github.com/ugorji/go
+  version: ded73eae
+- package: github.com/urfave/cli
+  version: v1.18.0
+- package: golang.org/x/crypto
+  version: d644981
+- package: golang.org/x/net
+  version: c8c74377
+- package: golang.org/x/sys
+  version: 3ccc7e5

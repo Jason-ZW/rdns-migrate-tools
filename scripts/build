@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+source $(dirname $0)/version
+
+cd $(dirname $0)/..
+
+BUILDDATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+
+CONST="-X main.VERSION=${VERSION} -X main.DATE='${BUILDDATE}'"
+
+mkdir -p bin
+go build -ldflags "$CONST -extldflags -static -s -w" -o bin/rdns-migrate-tools
