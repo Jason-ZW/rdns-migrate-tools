@@ -99,7 +99,7 @@ func appMain(ctx *cli.Context) error {
 	}
 
 	if err := c.MigrateFrozen(); err != nil {
-		return err
+		logrus.Error(err)
 	}
 
 	return c.MigrateRecords()

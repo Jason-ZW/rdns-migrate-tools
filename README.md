@@ -2,6 +2,10 @@
 
 Used to migrate rancher dns datum from 0.4.x to 0.5.x
 
+## Download
+
+[Binary](https://github.com/Jason-ZW/rdns-migrate-tools/releases/download/v1.0/rdns-migrate-tools)
+
 ## Build
 
 `make`
