@@ -1,6 +1,6 @@
 # rdns-migrate-tools
 
-Used to migrate rancher dns datum from 0.4.x to 0.5.x
+Used to migrate rancher dns datum from 0.4.x to 0.5.x. **Only for RDNS Route53 backend**
 
 ## Download
 

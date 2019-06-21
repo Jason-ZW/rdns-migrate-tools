@@ -247,6 +247,7 @@ func (v *V2Client) POSTTokenRecord(t Token) error {
 	defer v.lock.RUnlock()
 	url := fmt.Sprintf("%s/v1/migrate/token", v.dstAPIEndpoint)
 	fqdn := getDomainFromToken(t.Path)
+	t.Path = fqdn
 
 	if v.srcDomain != v.dstDomain {
 		t.Path = fmt.Sprintf("%s.%s", strings.Split(fqdn, ".")[0], v.dstDomain)
